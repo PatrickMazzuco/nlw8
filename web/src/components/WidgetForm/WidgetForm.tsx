@@ -38,8 +38,8 @@ export const WidgetForm = () => {
   const [wasFeedbackSent, setWasFeedbackSent] = useState(false);
 
   const handleRestartFeedback = () => {
-    setWasFeedbackSent(false);
     setSelectedFeedbackType(null);
+    setWasFeedbackSent(false);
   };
 
   return (
