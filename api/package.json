@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "clean": "rm -rf dist",
+    "build": "npm run clean & tsc",
+    "start": "npm run build & node dist/main.js",
     "dev": "ts-node-dev src/main.ts"
   },
   "keywords": [],
